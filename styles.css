@@ -1,0 +1,228 @@
+
+/* Unwaikai Global Stylesheet v4.5 */
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #fdfdfb;
+  color: #333;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1080px;
+  margin: auto;
+}
+
+/* Header - 導覽列與 LOGO 排版 */
+.header {
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between; /* 左右分離 */
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  height: 40px;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #a17945;
+}
+
+/* Hero 區塊 */
+.hero {
+  background: linear-gradient(to right, #e8d9c4, #fff);
+  padding: 5rem 0 4rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* 言語選択欄 */
+.language-select {
+  background: #f4f1ec;
+  padding: 1rem 0;
+}
+
+.language-inner {
+  text-align: center;
+}
+
+.lang-jp,
+.lang-en {
+  margin: 0.2rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.lang-buttons {
+  margin-top: 0.5rem;
+}
+
+.lang-buttons a {
+  display: inline-flex;
+  align-items: center;
+  margin: 0.2rem 0.5rem;
+  padding: 0.3rem 0.6rem;
+  background: white;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.lang-buttons img {
+  width: 16px;
+  height: 16px;
+  margin-right: 0.4rem;
+}
+
+/* お知らせ・理念・事業區 */
+.news, .philosophy, .business {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.news-title {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.news-date {
+  font-size: 0.95rem;
+  color: #555;
+  cursor: pointer;
+}
+
+.news p, .philosophy p {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* 事業卡片 Grid */
+.business .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin: 1rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin: 0 1rem 1rem;
+  color: #666;
+}
+
+.card a {
+  display: block;
+  padding: 0.75rem;
+  text-align: right;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #a17945;
+  background-color: #f8f5f0;
+  border-top: 1px solid #eee;
+}
+
+/* 哲學收尾 */
+.closing {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.closing p {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Footer（柔白底＋黑字） */
+footer {
+  background: #f9f4eb;
+  color: #222;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.4rem 0;
+}
+
+/* Responsive 設定 */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .card img {
+    height: 150px;
+  }
+}
